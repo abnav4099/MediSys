@@ -39,6 +39,7 @@ public class LoginController extends ActionSupport implements ModelDriven<LoginB
 	public String LoginUser()
 	{
 		String validateUser=LoginDao.ValidateUser(login_bean);
+		//test commit
 		if(validateUser.equals("success")){
 			return SUCCESS;
 		}else if(validateUser.equals("deactive"))
